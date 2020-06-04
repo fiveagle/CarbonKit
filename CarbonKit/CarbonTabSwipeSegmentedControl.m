@@ -168,6 +168,12 @@
     }
 }
 
+#pragma mark - UIGestureRecognizer
+
+- (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer {
+    return YES;
+}
+
 #pragma mark - Properties
 
 - (NSArray<UIView *> *)segments {
